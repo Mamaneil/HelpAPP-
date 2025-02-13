@@ -1,10 +1,38 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<module type="PYTHON_MODULE" version="4">
-  <component name="NewModuleRootManager">
-    <content url="file://$MODULE_DIR$">
-      <excludeFolder url="file://$MODULE_DIR$/.venv" />
-    </content>
-    <orderEntry type="jdk" jdkName="Python 3.13 (Assignment)" jdkType="Python SDK" />
-    <orderEntry type="sourceFolder" forTests="false" />
-  </component>
-</module>
+#Interactive quiz
+username= input ("Enter your name:")
+play= input ("Welcome,"+ username +  "would you like to play? (yes/no): ")
+if play.lower ()== "yes" :
+    print ("Brilliant, Let`s start!")
+    score = 0
+    questions= [
+        {
+            "question" = "Who is the president of the USA?",
+            "answer" : "Donald Trump",
+            "type" : "open-ended"
+        },
+        {
+            "question"= "Which currency does China us?",
+            "answer": "Yeun"
+            "type": "open-ended"
+        },
+        {
+            "question" ="In which continent is Zimbabwe in?",
+            "answer": "Africa"
+            "type": "open-ended"
+        },
+        {
+            "question" ="which season is the coldest?",
+            "answer" "winter"
+            "type": "open-ended"
+        }
+    ]
+              for question in questions
+                  answer= input (question ["question"] + "")
+                   if answer.lower()== question["answer"].lower ( ) :
+                       print("That`s correct!")
+                       score +=1
+                   else:
+                       print( "Incorect answer.")
+
+else :
+  print ( Thank you, bye!)
